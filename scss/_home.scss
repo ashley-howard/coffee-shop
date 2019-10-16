@@ -1,5 +1,7 @@
 nav {
     margin: 15px;
+    position: fixed;
+    width: 100%;
 }
 
 .logo {
@@ -14,7 +16,7 @@ nav {
 
 .main-text {
     width: 55%;
-    padding: 130px 100px;
+    padding: 30vh 100px;
 
     &__line {
         &--1 {
@@ -50,12 +52,13 @@ nav {
     height: 100vh;
     overflow: hidden;
     position: relative;
-    margin-top: -80px;
+    // margin-top: -80px;
 
     img {
         width: 100%;
         position: absolute;
-        right: 0;
-        top: 0;
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
     }
 }
